@@ -543,7 +543,7 @@ hr.hr-tags{margin:0 auto 15px;}
 
 /* Book */
 .buttons-box { float: left; margin: 8px 0 0 25px; }
-.btn-f-default:hover { background:#e74c3c; border: 1px solid #e74c3c; }
+.btn-f-default:hover { background:#323232; border: 1px solid #323232; }
 @media (max-width:767px) {
     #bloc-book-footer { display:none; }
     #bloc-book-footer-smartphone { margin:20px auto 0; }
