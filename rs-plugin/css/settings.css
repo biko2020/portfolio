@@ -21,8 +21,8 @@
 .tparrows .tp-arr-titleholder{display:none}
 .tparrows.preview1{width:100px;height:100px;-webkit-transform-style:preserve-3d;-webkit-perspective:1000;-moz-perspective:1000;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;background:transparent}
 .tparrows.preview1:after{position:absolute;left:0px;top:0px;font-family:"revicons";color:#fff;font-size:30px;width:100px;height:100px;text-align:center;background:#fff;background:rgba(0, 0, 0, 0.15);z-index:2;line-height:100px;-webkit-transition:background 0.3s, color 0.3s;-moz-transition:background 0.3s, color 0.3s;transition:background 0.3s, color 0.3s}
-.tp-rightarrow.preview1:after{content:'\e825';}
-.tp-leftarrow.preview1:after{content:'\e824';}
+.tp-rightarrow.preview1:after{content:'<';}
+.tp-leftarrow.preview1:after{content:'>';}
 .tparrows.preview1:hover:after{background:rgba(255, 255, 255, 1);color:#aaa}
 .tparrows.preview1 .tp-arr-imgholder{background-size:cover;background-position:center center;display:block;width:100%;height:100%;position:absolute;top:0px;-webkit-transition:-webkit-transform 0.3s;transition:transform 0.3s;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
 .tparrows.preview1 .tp-arr-iwrapper{-webkit-transition:all 0.3s;transition:all 0.3s;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-moz-opacity:0.0;-khtml-opacity:0.0;opacity:0.0}
