@@ -10,4 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
           this.textContent = "Show me result";
       }
   });
+
+  document.getElementById("explanation").addEventListener("click", function(e) {
+    e.preventDefault();
+    const explanationBlock = document.querySelector(".resultBlock");
+    if (explanationBlock.classList.contains("hidden")) {
+        explanationBlock.classList.remove("hidden");
+        this.textContent = "Hide explanation";
+    } else {
+        explanationBlock.classList.add("hidden");
+        this.textContent = "Understanding Complex Numbers";
+    }
+});
 });

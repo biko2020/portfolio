@@ -295,6 +295,7 @@
 								<span class="txt-formation"> <span class="txt-output-leftSpace">Hello </span> </span> <br>
 								<span class="txt-formation"> <span class="txt-output-leftSpace">Hello </span> </span> <br>
 								<span class="txt-formation"><span class="txt-output-leftSpace">Bye!</span> </span>
+								<br><br>
 
 								<p class="txt-formation">Indentation is also used in function bodies, if statement branches, and while
 									loops, as we’ll see later.</p>
@@ -330,8 +331,6 @@
 											</code>	
 									</pre>
 								</div>
-
-
 
 
 								<hr />
@@ -395,16 +394,61 @@
 
 								<br><br>
 
-								<p class="txt-formation">In Python, a <strong id="keyword-name">variable's </strong> type is not associated with its name, like in C, but
+								<p class="txt-formation">In Python, a <strong id="keyword-name">variable's </strong> type is not
+									associated with its name, like in C, but
 									rather with the value it holds. This is known as <strong>dynamic typing.</strong></p>
 
-									<img src="../img/Python-logo.png" alt="ACCIDENT DE TRAVAIL" class="img-responsive" width="200"
-									height="200" />
-						
+								<img src="../img/dynamic-variable.png" alt="dynamic-variable" class="img-responsive" />
 
+								<p class="txt-formation">
+									A variable is a name that refers to a value, and the assignment operator links the name to that
+									value.</p>
+								<p class="txt-formation">
+									Python's basic data types include <strong>int</strong>, <strong>float</strong>,
+									<strong>complex</strong>, <strong>str</strong>, <strong>bool</strong>(True/False), and
+									<strong>bytes</strong>.
+								</p>
+								<p class="txt-formation"> Here are
+									some examples of their use.
+								</p>
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+											<code class="console-code">
+												<span id="keyword-name">a=</span><span class="keyword-input">7</span> </span><br>
+												<span id="keyword-name">b=</span><span class="keyword-input">3.5</span> </span><br>
+												<span id="keyword-name">c=</span><span class="keyword-input">b = a==5</span> </span><br>
+												<span class="keyword-print">print(<span class="code-input">"Result of comparison:", c </span>)</span><br>
+
+												<span id="keyword-name">i=</span><span class="keyword-input">0+2j</span> </span><br>
+												<span class="keyword-print">print(<span class="code-input">"Complex multiplication:", i*i </span>)</span>
+
+											</code>
+									</pre>
+								</div>
+
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Result of comparison: False</span><br>
+									<span class="txt-formation"> <span class="txt-output-leftSpace">Complex multiplication: (-4+0j)</span>
+									</span> <br>
+									<hr />
+
+
+									<div class="showExplanation">
+										<a class="txt-formation" id="explanation" href="#"> Understanding Complex Numbers:</a>
+									</div>
+									<div class="resultBlock hidden">
+										<p class="txt-formation">
+											A complex number is in the form <strong> a+bj</strong><br>
+											In this case, <strong>i=0+2j </strong><br>
+											Here, <strong>a=0 </strong>(real part) and <strong>b=2</strong> (imaginary part).<br>
+											(0+2j)×(0+2j)<br>
+											(0×0−2×2)+(0×2+2×0)j<br>
+										</p>
+									</div>
 
 							</div>
-						</div>
 					</section>
 				</div>
 
