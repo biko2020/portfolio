@@ -45,3 +45,42 @@
 .price-section .btn, .price-section.style2 .box.active .btn, .price-section.style2 .box:hover .btn{background:#72cbf5f1;}
 .col-icon{color:#72cbf5f1;}
 .portfolio-block .text-box h4::before { background: #72cbf5f1; }
+
+.txt-formation{
+  color: #0c0c0ccc; 
+}
+.block-console-input{
+  background-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.keyword-print{
+  color: #61aeee;
+}
+.keyword-input{
+ color: #e06c75
+}
+.keyword-loop{
+  color: #c678dd;
+}
+#keyword-name{
+  color: #abb2bf;
+}
+.console-line{
+  background-color: #000;
+}
+.code-input {
+  color: #98c379;
+}
+
+#formation-active {
+  color: #000;
+  background-color: #98c379;
+  font-weight: bold;
+  cursor: pointer;
+}
+.box-execise{
+  padding: 2rem;
+  border-top: 0.4rem solid  rgb(167, 170, 172);
+  border-bottom: 0.4rem solid rgb(167, 170, 172);
+  background: rgb(235, 245, 251);
+}

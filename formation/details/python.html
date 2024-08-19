@@ -150,7 +150,7 @@
 								</div>
 								<ul class="breadcrumbs list-inline">
 									<li><a href="../../index.html">HOME</a></li>
-									<li><span class="fil_active">FORMATIONS</span></li>
+									<li><span class="fil_active"><a href="../index.html">FORMATIONS</a></span></li>
 								</ul>
 							</div>
 						</div>
@@ -181,30 +181,231 @@
 							</div>
 						</section>
 						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-7">
+							<div class="col-xs-12 ">
 								<h2>About this course
 								</h2>
-								<p> <strong>Python</strong> is a popular, easy to learn programming language. It is commonly used in the
+								<p class="txt-formation"> <strong>Python</strong> is a popular, easy to learn programming language. It
+									is commonly used in the
 									field of data
 									analysis, because there are very efficient libraries available to process large amounts of data. This
 									so called data analysis stack includes libraries such of NumPy, Pandas, Matplotlib and SciPy that we
 									will familiarize ourselves with during this course.</p>
 								<hr />
 								<h3>Python programs :</h3>
-								<ul class="list-style4">
-									<li>Python</li>
+								<ul class="txt-formation list-style4">
+									<li> <a href="python.html#python"><strong>Python</strong></a></li>
 									<li>Python and Numpy</li>
 									<li>More Numpy</li>
 									<li>Pandas</li>
 								</ul>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-5">
+							</div>
+						</div>
+					</section>
+
+					<!--Python -->
+					<section id="python" class="port-single">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Python</h2>
+								<h2>Basic input and output</h2>
+								<p class="txt-formation">
+									The classic "Hello, world!" program in Python is quite straightforward. To run it, click on the cell
+									with your mouse and press Ctrl + Enter on your keyboard. You can also experiment by changing the text
+									inside the quotes and running the program again.
+								</p>
+								<hr />
+
+								<!--Console Block-->
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+											<code class="console-code">
+													<span class="keyword-print">print(<span class="code-input">"Hello world!"</span>)</span>
+											</code>
+									</pre>
+								</div>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Hello world!</span> </span>
+
+								<hr />
+								<p class="txt-formation">
+									In the <strong class="keyword-print">print</strong> function, numerical expressions are first
+									evaluated and then automatically converted to
+									strings. Subsequently the strings are concatenated with spaces:
+								</p>
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+											<code class="console-code">
+													<span class="keyword-print">print(<span class="code-input">1, "plus", 2, "equals", 1+2 </span>)</span>
+											</code>
+									</pre>
+								</div>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">1 plus 2 equals 3</span> </span>
+
+
+								<hr />
+								<p class="txt-formation">
+									To read user <strong class="keyword-input">input</strong>, use the input function with a string
+									parameter that prompts the user. The entered
+									string is stored in the variable name. Run the example below by pressing Control + Enter!
+								</p>
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+											<code class="console-code">
+													<span id="keyword-name">name=</span><span class="keyword-input">input(<span class="code-input">"Enter your name: " </span>)</span><br>
+													<span class="keyword-print">print(<span class="code-input">"Hello,", name </span>)</span>
+											</code>
+									</pre>
+								</div>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Enter your name: AIT OUFKIR </span>
+								</span> <br>
+								<span class="txt-formation"><span class="txt-output-leftSpace">Hello, AIT OUFKIR </span> </span>
+
+								<hr />
+								<br />
+								<h2>Indentation</h2>
+								<p class="txt-formation">
+									Repetition can be achieved using a for <strong class="keyword-loop">loop</strong>. Note that the body
+									of the for loop is indented with a tab
+									or four spaces. Unlike some other languages, braces aren't required to define the loop's body. The
+									loop's body ends when the indentation ends.
+								</p>
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+											<code class="console-code">
+													<span class="keyword-loop">for <span class="code-input"> i <span class="keyword-loop"> in </span> range(3): </span> </span><br>
+													<span class="keyword-print">&nbsp;&nbsp;&nbsp;&nbsp;  print(<span class="code-input">"Hello" </span>)</span><br>
+													<span class="keyword-print">print(<span class="code-input">"Bye!" </span>)</span>
+											</code>
+									</pre>
+								</div>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Hello </span> </span> <br>
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Hello </span> </span> <br>
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Hello </span> </span> <br>
+								<span class="txt-formation"><span class="txt-output-leftSpace">Bye!</span> </span>
+
+								<p class="txt-formation">Indentation is also used in function bodies, if statement branches, and while
+									loops, as we’ll see later.</p>
+								<p class="txt-formation">
+									The range(3) expression generates the sequence 0, 1, 2, making it a half-open interval with the
+									endpoint excluded. Generally, range(n) produces integers from <strong>0 to n-1.</strong> Modify the
+									program to print the value of i in each iteration, then rerun it with Control + Enter.</p>
+								<hr />
+								<br>
+								<div class="box-execise">
+									<h2>Exercise (Multiplication)</h2>
+									<p class="txt-formation">
+										Write a program that generates the following output using a for <strong
+											class="keyword-loop">loop</strong> in your solution.
+									</p>
+									<!--Output-->
+									<span class="txt-formation"> <span class="txt-output-leftSpace">3 multiplied by 0 is 0 </span> </span>
+									<br>
+									<span class="txt-formation"> <span class="txt-output-leftSpace">3 multiplied by 1 is 3 </span> </span>
+									<br>
+									<span class="txt-formation"> <span class="txt-output-leftSpace">3 multiplied by 2 is 6 </span> </span>
+									<br>
+								</div>
+								<!--Input-->
+								<div class="showMeResult">
+									<a class="txt-formation" id="showMeResult" href="#"> Show me result</a>
+								</div>
+								<div class="block-console-input hidden" id="resultBlock">
+									<pre class="console-line">
+											<code class="console-code">
+													<span class="keyword-loop">for <span class="code-input"> i <span class="keyword-loop"> in </span> range(3): </span> </span><br>
+													<span class="keyword-print">&nbsp;&nbsp;&nbsp;&nbsp;  print(<span class="code-input">3, "multiplied by", i, "is", 3 * i </span>)</span><br>
+											</code>	
+									</pre>
+								</div>
+
+
+
+
+								<hr />
+								<h2>Variables and data types</h2>
+								<p class="txt-formation">
+									We previously demonstrated that assigning a value to a <strong id="keyword-name">variable</strong> is
+									very simple :
+								</p>
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+											<code class="console-code">
+													<span id="keyword-name">a=</span><span class="keyword-input">1</span> </span><br>
+													<span class="keyword-print">print(<span class="code-input">a</span>)</span>
+											</code>
+									</pre>
+								</div>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">1</span>
+								</span>
+								<br>
+								<br>
+								<p class="txt-formation">Note that we did not need to explicitly define the variable a or specify its
+									<strong>type</strong>.
+									Python automatically inferred that a is an integer (int). You can check the type of a variable using
+									the built-in type function:
+								</p>
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+											<code class="console-code">
+													
+													<span class="keyword-print">type(<span class="code-input">a</span>)</span>
+											</code>
+									</pre>
+								</div>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">int</span>
+								</span>
+								<br><br>
+
+								<p class="txt-formation">Note also that the type of a <strong id="keyword-name">variable</strong> is not
+									fixed:</p>
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+											<code class="console-code">
+												<span id="keyword-name">a=</span><span class="keyword-input">"this is text"</span> </span><br>
+												<span class="keyword-print">type(<span class="code-input">a</span>)</span>
+											</code>
+									</pre>
+								</div>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">str</span>
+								</span> <br>
+
+
+
+								<br><br>
+
+								<p class="txt-formation">In Python, a <strong id="keyword-name">variable's </strong> type is not associated with its name, like in C, but
+									rather with the value it holds. This is known as <strong>dynamic typing.</strong></p>
+
+									<img src="../img/Python-logo.png" alt="ACCIDENT DE TRAVAIL" class="img-responsive" width="200"
+									height="200" />
+						
 
 
 							</div>
 						</div>
 					</section>
-
 				</div>
 
 
@@ -306,13 +507,14 @@
 		document.getElementById("currentYear").textContent = new Date().getFullYear();
 	</script>
 	<div id="style-changer" data-src="_include/style-switcher.html"></div>
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/jquery.main.min.js"></script>
-	<script src="js/js-plugins.js"></script>
-	<script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-	<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-	<script src="js/js.min.js"></script>
-	<script src="js/icheck.min.js"></script>
+	<script src="../../js/jquery-1.11.3.min.js"></script>
+	<script src="../../js/jquery.main.min.js"></script>
+	<script src="../../js/js-plugins.js"></script>
+	<script src="../../rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="../../rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="../../js/js.min.js"></script>
+	<script src="../../js/icheck.min.js"></script>
+	<script src="../js/formation.js"></script>
 
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LNPF853" height="0" width="0"
