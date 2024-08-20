@@ -429,7 +429,7 @@
 								</div>
 
 								<!--Output-->
-								<span class="txt-formation"> <span class="txt-output-leftSpace">Result of comparison: False</span><br>
+								< class="txt-formation"> <span class="txt-output-leftSpace">Result of comparison: False</span><br>
 									<span class="txt-formation"> <span class="txt-output-leftSpace">Complex multiplication: (-4+0j)</span>
 									</span> <br>
 									<hr />
@@ -447,8 +447,107 @@
 											(0×0−2×2)+(0×2+2×0)j<br>
 										</p>
 									</div>
+									<hr />
+									<br>
+									<p class="txt-formation">
+										A <strong class="keyword-print">byte</strong> is a unit of information made up of 8 bits, capable of
+										representing numbers from 0 to 255.
+										All data stored or transmitted, such as strings, are sequences of bytes. Each character in a string
+										is encoded into one or more bytes. For instance, in UTF-8 encoding, the character 'c' is represented
+										by the byte 99, while 'ä' is represented by the byte sequence [195, 164].
+
+									</p>
+									<img src="../img/byte-unit.png" alt="dynamic-variable" class="img-responsive" />
+
+									<!--Input-->
+									<div class="block-console-input">
+										<pre class="console-line">
+											<code class="console-code">
+												<p># Convert character to a sequence of bytes</p>
+												<span id="keyword-name">b=</span><span class="keyword-input">"ä".encode("utf-8")</span> <br>
+												<span class="keyword-print">print(<span class="code-input">b</span>)</span><br>
+												<span class="keyword-print">print(<span class="code-input">list(b)</span>)</span>
+											</code>
+										</pre>
+									</div>
+
+									<!--Output-->
+									<span class="txt-formation"> <span class="txt-output-leftSpace">b'\xc3\xa4'</span> </span><br>
+									<span class="txt-formation"> <span class="txt-output-leftSpace">[195, 164]</span>
+									</span> <br>
+
+
+									<!--Input-->
+									<div class="block-console-input">
+										<pre class="console-line">
+											<code class="console-code">
+												<p># convert sequence of bytes to character</p>
+												<span id="keyword-name">bytes.</span><span class="keyword-input">decode(b, "utf-8") </span> <br>
+											</code>
+										</pre>
+									</div>
+
+									<!--Output-->
+									<span class="txt-formation"> <span class="txt-output-leftSpace">'ä'</span></span><br>
+									<br>
+									<hr />
+
+
+									<h2>CREATING STRINGS</h2>
+									<p class="txt-formation">
+										A <strong>string</strong> is a sequence of characters enclosed in single (') or double (")
+										quotes. This allows for including quotation marks within the string, such as "I don't want to
+										go!"
+										or by escaping them with a backslash: 'I don't want to go'. Strings can also include escape
+										sequences like <strong>\n</strong> for newline and <strong>\t</strong> for tab.</p>
+
+									<!--Input-->
+									<div class="block-console-input">
+										<pre class="console-line">
+													<code class="console-code">
+														
+															<span class="keyword-print">print(<span class="code-input">"Hello<span class="keyword-input">\t</span>World!<span class="keyword-input">\n</span>Welcome<span class="keyword-input">\t</span>to<span class="keyword-input">\t</span>Python."</span>)</span>
+															
+													</code>
+											</pre>
+									</div>
+									<!--Output-->
+									<span class="txt-formation"> <span class="txt-output-leftSpace">Hello World!</span><br>
+										<span class="txt-formation"> <span class="txt-output-leftSpace">Welcome to Python.</span>
+										</span>
+										<br>
+										<hr />
+										<p class="txt-formation">
+											While the <strong>+</strong> operator can be used to concatenate strings, it's more efficient to use the <strong>join</strong>
+											method when combining a large number of strings. For instance, instead of concatenating a list of
+											strings with +, you can use join like this:</p>
+
+										<!--Input-->
+										<div class="block-console-input">
+											<pre class="console-line">
+														<code class="console-code">
+															
+															<span id="keyword-name">str1=</span><span class="keyword-input">"Hello" </span> <br>
+															<span id="keyword-name">str2=</span><span class="keyword-input">"World" </span> <br>
+															<span id="keyword-name">str3=</span><span class="keyword-input">"Python" </span> <br>
+															
+															<span class="keyword-print">print(<span class="code-input">str1+str2+str3</span>)</span><br>
+															<span class="keyword-print">print(<span class="code-input">" ".join(<span class="keyword-input">[</span>str1, str2, str3 <span class="keyword-input">]</span>)</span>)</span><br>
+														</code>
+												</pre>
+										</div>
+										<!--Output-->
+										<span class="txt-formation"> <span class="txt-output-leftSpace">HelloWorldPython</span><br>
+											<span class="txt-formation"> <span class="txt-output-leftSpace">Hello World Python</span>
+											</span>
+											<br>
+											<br>
+
+
+
 
 							</div>
+						</div>
 					</section>
 				</div>
 
