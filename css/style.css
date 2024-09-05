@@ -777,6 +777,15 @@ form hr {
   text-transform: capitalize;
   text-align: right;
 }
+.formation-title {
+  margin: 0;
+  font: 30px/40px "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #e4b60fec;
+  font-weight: 600;
+  text-transform: capitalize;
+
+}
 .port-single h2 {
   font-size: 1.5em;
   margin: 0 0 10px;

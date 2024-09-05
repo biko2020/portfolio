@@ -194,9 +194,9 @@
 								<h3>Python programs :</h3>
 								<ul class="txt-formation list-style4">
 									<li> <a href="python.html#python"><strong>Python</strong></a></li>
-									<li>Python and Numpy</li>
-									<li>More Numpy</li>
-									<li>Pandas</li>
+									<li> <a href="python.html#pythonandNumpy"><strong>Python and Numpy</strong></a></li>
+									<li> <a href="python.html#moreNumpy"><strong>More Numpy</strong></a> </li>
+									<li> <a href="python.html#pandas"><strong>Pandas</strong></a> </li>
 								</ul>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-5">
@@ -208,7 +208,7 @@
 					<section id="python" class="port-single">
 						<div class="row">
 							<div class="col-xs-12">
-								<h2>Python</h2>
+								<span class="formation-title">Python</span>
 								<h2>Basic input and output</h2>
 								<p class="txt-formation">
 									The classic "Hello, world!" program in Python is quite straightforward. To run it, click on the cell
@@ -429,7 +429,7 @@
 								</div>
 
 								<!--Output-->
-								< class="txt-formation"> <span class="txt-output-leftSpace">Result of comparison: False</span><br>
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Result of comparison: False</span><br>
 									<span class="txt-formation"> <span class="txt-output-leftSpace">Complex multiplication: (-4+0j)</span>
 									</span> <br>
 									<hr />
@@ -457,7 +457,7 @@
 										by the byte 99, while 'ä' is represented by the byte sequence [195, 164].
 
 									</p>
-									<img src="../img/byte-unit.png" alt="dynamic-variable" class="img-responsive" />
+									<img src="../img/byte-unit.png" alt="byte unit" class="img-responsive" />
 
 									<!--Input-->
 									<div class="block-console-input">
@@ -488,43 +488,46 @@
 									</div>
 
 									<!--Output-->
-									<span class="txt-formation"> <span class="txt-output-leftSpace">'ä'</span></span><br>
-									<br>
+									<span class="txt-formation"> <span class="txt-output-leftSpace">'ä'</span>
+									</span> <br><br>
+
 									<hr />
 
 
-									<h2>CREATING STRINGS</h2>
+									<h2>Creating Strings</h2>
 									<p class="txt-formation">
 										A <strong>string</strong> is a sequence of characters enclosed in single (') or double (")
 										quotes. This allows for including quotation marks within the string, such as "I don't want to
 										go!"
 										or by escaping them with a backslash: 'I don't want to go'. Strings can also include escape
-										sequences like <strong>\n</strong> for newline and <strong>\t</strong> for tab.</p>
+										sequences like <strong>\n</strong> for newline and <strong>\t</strong> for tab.
+									</p>
 
 									<!--Input-->
 									<div class="block-console-input">
 										<pre class="console-line">
-													<code class="console-code">
-														
-															<span class="keyword-print">print(<span class="code-input">"Hello<span class="keyword-input">\t</span>World!<span class="keyword-input">\n</span>Welcome<span class="keyword-input">\t</span>to<span class="keyword-input">\t</span>Python."</span>)</span>
-															
+													<code class="console-code">													
+														<span class="keyword-print">print(<span class="code-input">"Hello<span class="keyword-input">\t</span>World!<span class="keyword-input">\n</span>Welcome<span class="keyword-input">\t</span>to<span class="keyword-input">\t</span>Python."</span>)</span>													
 													</code>
 											</pre>
 									</div>
 									<!--Output-->
-									<span class="txt-formation"> <span class="txt-output-leftSpace">Hello World!</span><br>
-										<span class="txt-formation"> <span class="txt-output-leftSpace">Welcome to Python.</span>
-										</span>
-										<br>
-										<hr />
-										<p class="txt-formation">
-											While the <strong>+</strong> operator can be used to concatenate strings, it's more efficient to use the <strong>join</strong>
-											method when combining a large number of strings. For instance, instead of concatenating a list of
-											strings with +, you can use join like this:</p>
+									<span class="txt-formation">
+										<span class="txt-output-leftSpace">Hello World!</span><br>
+										<span class="txt-output-leftSpace">Welcome to Python.</span><br>
+									</span>
 
-										<!--Input-->
-										<div class="block-console-input">
-											<pre class="console-line">
+									<br>
+									<hr />
+									<p class="txt-formation">
+										While the <strong>+</strong> operator can be used to concatenate strings, it's more efficient to
+										use the <strong>join</strong>
+										method when combining a large number of strings. For instance, instead of concatenating a list of
+										strings with +, you can use join like this:</p>
+
+									<!--Input-->
+									<div class="block-console-input">
+										<pre class="console-line">
 														<code class="console-code">
 															
 															<span id="keyword-name">str1=</span><span class="keyword-input">"Hello" </span> <br>
@@ -535,21 +538,83 @@
 															<span class="keyword-print">print(<span class="code-input">" ".join(<span class="keyword-input">[</span>str1, str2, str3 <span class="keyword-input">]</span>)</span>)</span><br>
 														</code>
 												</pre>
-										</div>
-										<!--Output-->
-										<span class="txt-formation"> <span class="txt-output-leftSpace">HelloWorldPython</span><br>
-											<span class="txt-formation"> <span class="txt-output-leftSpace">Hello World Python</span>
-											</span>
-											<br>
-											<br>
-
-
-
+									</div>
+									<!--Output-->
+									<span class="txt-formation">
+										<span class="txt-output-leftSpace">HelloWorldPython</span><br>
+										<span class="txt-output-leftSpace">Hello World Python</span>
+									</span>
+									<br>
+									<br>
 
 							</div>
 						</div>
 					</section>
+					<hr />
+
+
+
+
+
+					
+					<!--Python and Numpy -->
+					<section id="pythonandNumpy" class="port-single">
+						<div class="row">
+							<div class="col-xs-12">
+								<span class="formation-title">Python and Numpy</span>
+								<h2>Introduction</h2>
+								<p class="txt-formation">
+									The classic "Hello, world!" program in Python is quite straightforward. To run it, click on the cell
+									with your mouse and press Ctrl + Enter on your keyboard. You can also experiment by changing the text
+									inside the quotes and running the program again.
+								</p>
+								<hr />
+							</div>
+						</div>
+					</section>
+					<hr />
+
+
+					<!-- More Numpy -->
+					<section id="moreNumpy" class="port-single">
+						<div class="row">
+							<div class="col-xs-12">
+								<span class="formation-title">More Numpy</span>
+								<h2>Introduction</h2>
+								<p class="txt-formation">
+									The classic "Hello, world!" program in Python is quite straightforward. To run it, click on the cell
+									with your mouse and press Ctrl + Enter on your keyboard. You can also experiment by changing the text
+									inside the quotes and running the program again.
+								</p>
+								<hr />
+							</div>
+						</div>
+					</section>
+					<hr />
+
+
+					<!-- Pandas -->
+					<section id="pandas" class="port-single">
+						<div class="row">
+							<div class="col-xs-12">
+								<span class="formation-title">Pandas</span>
+								<h2>Introduction</h2>
+								<p class="txt-formation">
+									The classic "Hello, world!" program in Python is quite straightforward. To run it, click on the cell
+									with your mouse and press Ctrl + Enter on your keyboard. You can also experiment by changing the text
+									inside the quotes and running the program again.
+								</p>
+								<hr />
+							</div>
+						</div>
+					</section>
+					<hr />
+
+
+
 				</div>
+
+
 
 
 			</main>
