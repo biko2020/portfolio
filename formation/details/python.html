@@ -175,7 +175,7 @@
 						<section class="padding-bottom-30">
 							<div class="row">
 								<div class="col-md-12">
-									<img src="../img/Python-logo.png" alt="ACCIDENT DE TRAVAIL" class="img-responsive" width="200"
+									<img src="../img/Python-logo.png" alt="Python" class="img-responsive" width="200"
 										height="200" />
 								</div>
 							</div>
@@ -391,7 +391,6 @@
 								</span> <br>
 
 
-
 								<br><br>
 
 								<p class="txt-formation">In Python, a <strong id="keyword-name">variable's </strong> type is not
@@ -429,39 +428,40 @@
 								</div>
 
 								<!--Output-->
-								<span class="txt-formation"> <span class="txt-output-leftSpace">Result of comparison: False</span><br>
-									<span class="txt-formation"> <span class="txt-output-leftSpace">Complex multiplication: (-4+0j)</span>
-									</span> <br>
-									<hr />
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Result of comparison:
+										False</span></span><br>
+								<span class="txt-formation"> <span class="txt-output-leftSpace">Complex multiplication: (-4+0j)</span>
+								</span> <br>
+								<hr />
 
 
-									<div class="showExplanation">
-										<a class="txt-formation" id="explanation" href="#"> Understanding Complex Numbers:</a>
-									</div>
-									<div class="resultBlock hidden">
-										<p class="txt-formation">
-											A complex number is in the form <strong> a+bj</strong><br>
-											In this case, <strong>i=0+2j </strong><br>
-											Here, <strong>a=0 </strong>(real part) and <strong>b=2</strong> (imaginary part).<br>
-											(0+2j)×(0+2j)<br>
-											(0×0−2×2)+(0×2+2×0)j<br>
-										</p>
-									</div>
-									<hr />
-									<br>
+								<div class="showExplanation">
+									<a class="txt-formation" id="explanation" href="#"> Understanding Complex Numbers:</a>
+								</div>
+								<div class="resultBlock hidden">
 									<p class="txt-formation">
-										A <strong class="keyword-print">byte</strong> is a unit of information made up of 8 bits, capable of
-										representing numbers from 0 to 255.
-										All data stored or transmitted, such as strings, are sequences of bytes. Each character in a string
-										is encoded into one or more bytes. For instance, in UTF-8 encoding, the character 'c' is represented
-										by the byte 99, while 'ä' is represented by the byte sequence [195, 164].
-
+										A complex number is in the form <strong> a+bj</strong><br>
+										In this case, <strong>i=0+2j </strong><br>
+										Here, <strong>a=0 </strong>(real part) and <strong>b=2</strong> (imaginary part).<br>
+										(0+2j)×(0+2j)<br>
+										(0×0−2×2)+(0×2+2×0)j<br>
 									</p>
-									<img src="../img/byte-unit.png" alt="byte unit" class="img-responsive" />
+								</div>
+								<hr />
+								<br>
+								<p class="txt-formation">
+									A <strong class="keyword-print">byte</strong> is a unit of information made up of 8 bits, capable of
+									representing numbers from 0 to 255.
+									All data stored or transmitted, such as strings, are sequences of bytes. Each character in a string
+									is encoded into one or more bytes. For instance, in UTF-8 encoding, the character 'c' is represented
+									by the byte 99, while 'ä' is represented by the byte sequence [195, 164].
 
-									<!--Input-->
-									<div class="block-console-input">
-										<pre class="console-line">
+								</p>
+								<img src="../img/byte-unit.png" alt="byte unit" class="img-responsive" />
+
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
 											<code class="console-code">
 												<p># Convert character to a sequence of bytes</p>
 												<span id="keyword-name">b=</span><span class="keyword-input">"ä".encode("utf-8")</span> <br>
@@ -469,65 +469,65 @@
 												<span class="keyword-print">print(<span class="code-input">list(b)</span>)</span>
 											</code>
 										</pre>
-									</div>
+								</div>
 
-									<!--Output-->
-									<span class="txt-formation"> <span class="txt-output-leftSpace">b'\xc3\xa4'</span> </span><br>
-									<span class="txt-formation"> <span class="txt-output-leftSpace">[195, 164]</span>
-									</span> <br>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">b'\xc3\xa4'</span> </span><br>
+								<span class="txt-formation"> <span class="txt-output-leftSpace">[195, 164]</span>
+								</span> <br>
 
 
-									<!--Input-->
-									<div class="block-console-input">
-										<pre class="console-line">
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
 											<code class="console-code">
 												<p># convert sequence of bytes to character</p>
 												<span id="keyword-name">bytes.</span><span class="keyword-input">decode(b, "utf-8") </span> <br>
 											</code>
 										</pre>
-									</div>
+								</div>
 
-									<!--Output-->
-									<span class="txt-formation"> <span class="txt-output-leftSpace">'ä'</span>
-									</span> <br><br>
+								<!--Output-->
+								<span class="txt-formation"> <span class="txt-output-leftSpace">'ä'</span>
+								</span> <br><br>
 
-									<hr />
+								<hr />
 
 
-									<h2>Creating Strings</h2>
-									<p class="txt-formation">
-										A <strong>string</strong> is a sequence of characters enclosed in single (') or double (")
-										quotes. This allows for including quotation marks within the string, such as "I don't want to
-										go!"
-										or by escaping them with a backslash: 'I don't want to go'. Strings can also include escape
-										sequences like <strong>\n</strong> for newline and <strong>\t</strong> for tab.
-									</p>
+								<h2>Creating Strings</h2>
+								<p class="txt-formation">
+									A <strong>string</strong> is a sequence of characters enclosed in single (') or double (")
+									quotes. This allows for including quotation marks within the string, such as "I don't want to
+									go!"
+									or by escaping them with a backslash: 'I don't want to go'. Strings can also include escape
+									sequences like <strong>\n</strong> for newline and <strong>\t</strong> for tab.
+								</p>
 
-									<!--Input-->
-									<div class="block-console-input">
-										<pre class="console-line">
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
 													<code class="console-code">													
 														<span class="keyword-print">print(<span class="code-input">"Hello<span class="keyword-input">\t</span>World!<span class="keyword-input">\n</span>Welcome<span class="keyword-input">\t</span>to<span class="keyword-input">\t</span>Python."</span>)</span>													
 													</code>
 											</pre>
-									</div>
-									<!--Output-->
-									<span class="txt-formation">
-										<span class="txt-output-leftSpace">Hello World!</span><br>
-										<span class="txt-output-leftSpace">Welcome to Python.</span><br>
-									</span>
+								</div>
+								<!--Output-->
+								<span class="txt-formation">
+									<span class="txt-output-leftSpace">Hello World!</span><br>
+									<span class="txt-output-leftSpace">Welcome to Python.</span><br>
+								</span>
 
-									<br>
-									<hr />
-									<p class="txt-formation">
-										While the <strong>+</strong> operator can be used to concatenate strings, it's more efficient to
-										use the <strong>join</strong>
-										method when combining a large number of strings. For instance, instead of concatenating a list of
-										strings with +, you can use join like this:</p>
+								<br>
+								<hr />
+								<p class="txt-formation">
+									While the <strong>+</strong> operator can be used to concatenate strings, it's more efficient to
+									use the <strong>join</strong>
+									method when combining a large number of strings. For instance, instead of concatenating a list of
+									strings with +, you can use join like this:</p>
 
-									<!--Input-->
-									<div class="block-console-input">
-										<pre class="console-line">
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
 														<code class="console-code">
 															
 															<span id="keyword-name">str1=</span><span class="keyword-input">"Hello" </span> <br>
@@ -538,28 +538,29 @@
 															<span class="keyword-print">print(<span class="code-input">" ".join(<span class="keyword-input">[</span>str1, str2, str3 <span class="keyword-input">]</span>)</span>)</span><br>
 														</code>
 												</pre>
-									</div>
-									<!--Output-->
-									<span class="txt-formation">
-										<span class="txt-output-leftSpace">HelloWorldPython</span><br>
-										<span class="txt-output-leftSpace">Hello World Python</span>
-									</span>
-									<br>
-									<br>
+								</div>
+								<!--Output-->
+								<span class="txt-formation">
+									<span class="txt-output-leftSpace">HelloWorldPython</span><br>
+									<span class="txt-output-leftSpace">Hello World Python</span>
+								</span>
+								<br>
+								<br>
 
-									<p class="txt-formation">
-										The multiple catenation and quotation characters break the flow of thought.
-										String interpolation offers somewhat easier syntax.
-										There are multiple ways to do String interpolation :<br>
-									<p>- Python format string</p>
-									<p>- THe format method</p>
-									<p>- f-string</p>
-									</p>
+								<p class="txt-formation">
+									The multiple catenation and quotation characters break the flow of thought.
+									String interpolation offers somewhat easier syntax.
+									There are multiple ways to do String interpolation :<br><br>
+
+									<strong>&#8226;</strong> Python format string<br>
+									<strong>&#8226;</strong> The format method<br>
+									<strong>&#8226;</strong> f-string<br>
+								</p>
 
 
-									<!--Input-->
-									<div class="block-console-input">
-										<pre class="console-line">
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
 														<code class="console-code">
 															<p># Python Format String </p>
 															<span class="keyword-print">print(<span class="code-input">"%i plus %i is equal to %i"</span></span> <span class="keyword-loop">%</span> <span class="keyword-input">(1, 3, 4)</span><span class="keyword-print">)</span><br> 
@@ -569,37 +570,97 @@
 															<span class="keyword-print">print(<span class="code-input">f"<span class="keyword-loop">{1}</span> plus <span class="keyword-loop">{3}</span> is equal to <span class="keyword-loop">{4}</span>"</span></span><span class="keyword-print">)</span><br>
 														</code>
 												</pre>
-									</div>
-									<!--Output-->
-									<span class="txt-formation">
-										<span class="txt-output-leftSpace">1 plus 3 is equal to 4</span><br>
-										<span class="txt-output-leftSpace">1 plus 3 is equal to 4</span><br>
-										<span class="txt-output-leftSpace">1 plus 3 is equal to 4</span><br>
+								</div>
+								<!--Output-->
+								<span class="txt-formation">
+									<span class="txt-output-leftSpace">1 plus 3 is equal to 4</span><br>
+									<span class="txt-output-leftSpace">1 plus 3 is equal to 4</span><br>
+									<span class="txt-output-leftSpace">1 plus 3 is equal to 4</span><br>
 
-									</span>
-									<br>
-									<br>
+								</span>
+								<br>
+								<br>
 
-									<!--Input-->
-									<div class="block-console-input">
-										<pre class="console-line">
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
 														<code class="console-code">
 															<p># Example</p>
 															<span class="keyword-print">print(<span class="code-input">"{:.1f} {:.2f} {:.3f}"</span></span> <span class="keyword-loop">.format</span> <span class="keyword-input">(1.6, 1.8, 1.9)</span><span class="keyword-print">)</span><br>
+															<span class="keyword-print">print(<span class="code-input">"%.1f %.2f %.3f"</span></span> <span class="keyword-loop">.% </span> <span class="keyword-input">(1.6, 1.8, 1.9)</span><span class="keyword-print">)</span><br>
+															<span class="keyword-print">print(<span class="code-input">f"{1.6:.1f} {1.8:.2f} {1.9:.3f}"</span></span><span class="keyword-print">)</span><br>
+														<p> # The specifier "s" is used for strings </p>
+															<span class="keyword-print">print(<span class="code-input">"%s combined with %s gives %s"</span></span> <span class="keyword-loop"> % </span> <span class="keyword-input">("sun", "shine", "sun" + "shine")</span><span class="keyword-print">)</span><br>
+															<span class="keyword-print">print(<span class="code-input">"{0} combined with {1} gives {0}{1}"</span></span> <span class="keyword-loop"> .format </span> <span class="keyword-input">("sun", "shine")</span><span class="keyword-print">)</span><br>
+															<span class="keyword-print">print(<span class="code-input">"f{'sun'} combined with {'shine'} gives </span></span>  <span class="keyword-input">{'sun' + 'shine'}"</span><span class="keyword-print">)</span><br>
 														</code>
-												</pre>
-									</div>
-									<!--Output-->
-									<span class="txt-formation">
-										<span class="txt-output-leftSpace">1.6 1.80 1.900</span><br>
-									</span>
-									<br>
-									<br>
+											</pre>
+								</div>
+								<!--Output-->
+								<span class="txt-formation">
+									<span class="txt-output-leftSpace">1.6 1.80 1.900</span><br>
+									<span class="txt-output-leftSpace">1.6 1.80 1.900</span><br>
+									<span class="txt-output-leftSpace">1.6 1.80 1.900</span><br>
+									<p> </p>
+									<span class="txt-output-leftSpace">sun combined with shine gives sunshine</span><br>
+									<span class="txt-output-leftSpace">sun combined with shine gives sunshine</span><br>
+									<span class="txt-output-leftSpace">sun combined with shine gives sunshine</span><br>
+								</span>
+								<br>
+								<br>
+
+								<p class="txt-formation">
+									Different methods of string interpolation each have their own strengths and weaknesses. Choosing
+									which one to use is typically a matter of personal preference. In this course, most examples and
+									model solutions will primarily use f-strings and the format method.
+									For more details about format specifiers , look <strong><a
+											href="https://pyformat.info/#number">here</a></strong>
+								</p>
 
 
+								<hr />
+								<br>
 
+								<h2>Expressions</h2>
+								<p class="txt-formation">
+									An expression in Python is code that produces a value, made up of literals (e.g., 2, 5.2, "text") or
+									variables combined with operators like arithmetic, comparison, function calls, indexing, and attribute
+									references. Here are some examples:
+								</p>
 
+								<!--Input-->
+								<div class="block-console-input">
+									<pre class="console-line">
+													<code class="console-code">													
+														<span class="keyword-input" > 5 </span><span class="keyword-name"> # Literal expression</span><br>
+														<span class="keyword-input" > 3 / (5 + 0.2) </span><span class="keyword-name"> # Arithmetic expression</span><br>
+														<span class="keyword-input" > a </span><span class="keyword-name"> # Variable expression</span><br>
+														<span class="keyword-input" > cos(0) </span><span class="keyword-name"> # Function call expression </span><br>
+														<span class="keyword-input" > obj.attr </span><span class="keyword-name"> # Attribute reference expression</span><br>
+													</code>
+											</pre>
+								</div>
+								<br>
 
+								<hr />
+								<br>
+
+								<h2>Statements</h2>
+								<p class="txt-formation">
+									Statements are commands that perform an action. For instance, a function call that stands alone (not
+									embedded in another expression) is a statement. Similarly, assigning a value to a variable is also a
+									statement.
+								</p>
+								<div class="block-console-input">
+									<pre class="console-line">
+													<code class="console-code">													
+														<span class="keyword-input" > a = 5 </span><span class="keyword-name"> # Variable assignment</span><br>
+														<span class="keyword-input" > a = a + 1 </span><span class="keyword-name"> # Assignment and increment by 1</span><br>
+														<span class="keyword-input" > a += 1 </span><span class="keyword-name"> # shorthand for incrementing</span><br>
+													</code>
+											</pre>
+								</div>
+								<br>
 							</div>
 						</div>
 					</section>
