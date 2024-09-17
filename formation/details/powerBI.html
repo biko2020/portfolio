@@ -51,7 +51,7 @@
   <link rel="stylesheet" href="../../css/color/color.css">
   <link rel="stylesheet" href="../../css/animate.css">
   <link rel="stylesheet" href="../../css/iCheck/grey.css">
-
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 
 <body>
@@ -181,26 +181,23 @@
             </section>
             <div class="row">
               <div class="col-xs-12 ">
-                <h2>À propos de ce cours
+                <h2>Projet : Analyse des performances d'une entreprise de vente au détail.
                 </h2>
-                <p class="txt-formation">
-                  <strong>Power BI</strong> est un outil incontournable pour les entreprises qui souhaitent tirer le
-                  meilleur parti de
-                  leurs données. Il permet de transformer des données complexes en informations exploitables, facilitant
-                  ainsi la prise de décisions stratégiques.
+
+                <p class="txt-formation">Ce projet consiste à analyser les données de ventes d'une entreprise de vente
+                  au détail dans le but de comprendre ses performances globales, d'identifier les tendances de vente, de
+                  déterminer les produits les plus rentables et d'évaluer la satisfaction des clients. L'outil<strong>
+                    Power BI</strong> sera utilisé pour visualiser et interpréter ces données de manière claire et
+                  efficace.
                 </p>
                 <hr />
-                <h3>Projet </h3>
-                
-                <p>Analyser les données de ventes d'une entreprise de vente au détail pour comprendre les performances
-                  globales, les tendances de vente, les produits les plus rentables, et la satisfaction des clients.
-                  Sur Power BI pourrait être "Analyse des performances d'une entreprise de vente au détail". Voici les grandes lignes du projet :</p>
+                <h3>Étapes du projet:</h3>
                 <ul class="txt-formation list-style4">
-                  <li> <a href="powerBI.html#Comparaison"><strong>Quelle est la différence entre Power BI Desktop et le
+                  <li> <a href="powerBI.html#Comparaison"><strong>1-Quelle est la différence entre Power BI Desktop et le
                         service Power BI ?</strong></a></li>
-                  <li> <a href="powerBI.html#Install-PowerBI"><strong>Télécharger et installer Power BI
+                  <li> <a href="powerBI.html#Install-PowerBI"><strong>2-Télécharger et installer Power BI
                         Desktop</strong></a></li>
-                  <li><a href="powerBI.html#GetData "><strong>Importez les données</strong> </a></li>
+                  <li><a href="powerBI.html#Diagrammes "><strong>3-Diagrammes</strong> </a></li>
                 </ul>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-5">
@@ -273,29 +270,67 @@
               <h2>Install Power BI Desktop </h2>
 
               <p class="txt-formation">Téléchargez <strong>Power BI Desktop </strong>depuis
-                <strong>le site officiel de Microsoft </strong>et installez-le sur votre ordinateur.
+                <strong>le site officiel deMicrosoft </strong>et installez-le sur votre ordinateur.
               </p>
               <hr />
 
             </div>
           </section>
 
-          <!--Importez les données  ?-->
-          <section id="GetData" class="port-single">
+          <!--Diagrammes  ?-->
+          <section id="Diagrammes" class="port-single">
             <div class="row">
               <p class="col-xs-12">
-                <span class="formation-title"> Importez les données
+                <span class="formation-title"> Diagrammes
                 </span>
               </p>
-              <h2>Obtenir des données </h2>
-              <p class="txt-formation">Pour commencer, ouvrez Power BI Desktop, puis accédez à <strong>"Obtenir des
-                  données"</strong>
-                afin de sélectionner votre source de données (<strong>Excel, SQL Server, fichiers CSV, services en
-                  ligne, etc.</strong>)
-                et d'importer les tables ou colonnes spécifiques dont vous avez besoin.</p>
-              <hr />
+              <h2>Les différentes étapes impliquées dans l'analyse des ventes </h2>
+              <div class="txt-formation">
+                <p>1-<strong>Collecte des données:</strong> Sources de données (ventes en magasin, en ligne.).</p>
+                <p>2-<strong>Nettoyage des données:</strong> Suppression des doublons, correction des erreurs.</p>
+                <p>3-<strong>Analyse exploratoire:</strong> Identification des tendances, des anomalies, des
+                  corrélations.</p>
+                <p>4-<strong>Modélisation:</strong> Création de modèles prédictifs (pour prévoir les ventes futures).
+                </p>
+                <p>5-<strong>Visualisation:</strong> Création de graphiques et de tableaux de bord pour présenter les
+                  résultats.</p>
+                <p>6-<strong>Prise de décision:</strong> Utilisation des insights pour optimiser les stratégies
+                  commerciales.</p>
+                </p>
 
-            </div>
+                <!--Start Flowchart -->
+                <pre class="mermaid">
+                flowchart TB
+                subgraph **Collecte des données**
+                    A(Ventes en magasin)
+                    B(Ventes en ligne)
+                    C(Retours)
+                end
+            
+                subgraph **Analyse exploratoire**
+                    D(Analyse par produit)
+                    E(Analyse par région)
+                    F(Analyse par saison)
+                end
+            
+                subgraph **Modélisation**
+                    G(Régression linéaire)
+                    H(Forêts aléatoires)
+                end
+            
+                A --> B --> C --> D
+                D --> E --> F
+                F --> G
+                F --> H
+                G --> I(Visualisation)
+                H --> I
+                I --> J(Prise de décision)
+              </pre>
+                <!-- end Flowchart -->
+
+                <hr />
+
+              </div>
           </section>
 
 
@@ -396,7 +431,9 @@
     </div>
     <div class="fa fa-chevron-up" id="gotoTop"></div>
   </div>
-
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
   <script>
     document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
