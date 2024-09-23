@@ -193,11 +193,13 @@
                 <hr />
                 <h3>Étapes du projet:</h3>
                 <ul class="txt-formation list-style4">
-                  <li> <a href="powerBI.html#Comparaison"><strong>1-Quelle est la différence entre Power BI Desktop et le
+                  <li> <a href="powerBI.html#Comparaison"><strong>1- Quelle est la différence entre Power BI Desktop et
+                        le
                         service Power BI ?</strong></a></li>
-                  <li> <a href="powerBI.html#Install-PowerBI"><strong>2-Télécharger et installer Power BI
+                  <li> <a href="powerBI.html#Install-PowerBI"><strong>2- Télécharger et installer Power BI
                         Desktop</strong></a></li>
-                  <li><a href="powerBI.html#Diagrammes "><strong>3-Diagrammes</strong> </a></li>
+                  <li><a href="powerBI.html#Diagrammes "><strong>3- Diagrammes</strong> </a></li>
+                  <li><a href="powerBI.html#CreateSQL"><strong>4- Créer une base de données</strong></a></li>
                 </ul>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-5">
@@ -333,6 +335,131 @@
               </div>
           </section>
 
+
+          <!-- Créer une base de données -->
+          <section id="CreateSQL" class="port-single">
+            <div class="row">
+              <p class="col-xs-12">
+                <span class="formation-title">Créer une base de données</span>
+              </p>
+              <h2>Script SQL</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/kU3iGFDQaFg"
+                title="Fractionner le Texte" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+											<span class="keyword-input">---Tables ---</span>
+                       <p class="code-input">
+                        Clients<br>
+                        Produits<br>
+                        Satisfaction_Client<br>
+                        Ventes<br>
+                        </p>
+                      </span>									          
+									</code>
+									</pre>
+              </div>
+
+              <h2>1- Création de la base de données</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                      <span class="keyword-print">
+                        CREATE DATABASE <span class="keyword-input">VenteAuDetail</span> ;<br>
+                        USE  <span class="keyword-input">VenteAuDetail</span>;
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+              <h2>2- Création de la table Clients</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                   <span class="keyword-print"> CREATE TABLE </span> <span class="keyword-input">Clients</span> (<br>
+                         <span class="code-input">Client_ID</span>  <span class="keyword-input">INT </span><span class="keyword-print">PRIMARY KEY</span> ,<br>
+                         <span class="code-input">Nom</span>  <span class="keyword-input">VARCHAR(100)</span>,<br>
+                         <span class="code-input">Age</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Genre</span>  <span class="keyword-input">CHAR(1) </span>,<br>
+                         <span class="code-input">Ville</span>  <span class="keyword-input">VARCHAR(100) </span>,<br>
+                       );
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+
+
+              <h2>3- Création de la table Produits</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                   <span class="keyword-print"> CREATE TABLE </span> <span class="keyword-input">Produits</span> (<br>
+                         <span class="code-input">Produit_ID</span>  <span class="keyword-input">INT </span><span class="keyword-print">PRIMARY KEY</span>,<br>
+                         <span class="code-input">Nom_Produit</span>  <span class="keyword-input">VARCHAR(100)</span>,<br>
+                         <span class="code-input">Categorie</span>  <span class="keyword-input">VARCHAR(50)</span>,<br>
+                         <span class="code-input">Prix_Unitaire</span>  <span class="keyword-input">DECIMAL(10, 2) </span>,<br>
+                         <span class="code-input">Stock</span>  <span class="keyword-input">INT </span><br>
+                       );
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+
+
+              <h2>4- Création de la table Ventes</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                   <span class="keyword-print"> CREATE TABLE </span> <span class="keyword-input">Ventes</span> (<br>
+                         <span class="code-input">Vente_ID</span>  <span class="keyword-input">INT </span><span class="keyword-print">PRIMARY KEY</span> ,<br>
+                         <span class="code-input">Date</span>  <span class="keyword-input">DATE</span><span class="keyword-print"> NOT NULL</span>,<br>
+                         <span class="code-input">Client_ID</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Produit_ID</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">QUantite</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Prix_Unitaire</span>  <span class="keyword-input">DECIMAL(10, 2) </span>,<br>
+                         <span class="code-input">Montant_Total</span>  <span class="keyword-input">DECIMAL(10, 2) </span>,<br>
+                         <span class="keyword-print">FOREIGN KEY</span> <span class="code-input">(Client_ID)</span><span class="keyword-print"> REFERENCES </span><span class="code-input">Clients(Client_ID)</span>,<br>
+                         <span class="keyword-print">FOREIGN KEY</span> <span class="code-input">(Produit_ID)</span><span class="keyword-print"> REFERENCES </span><span class="code-input">Produits(Produit_ID)</span><br>
+
+                         );
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+              <h2>5- Création de la table Satisfaction_Client</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                   <span class="keyword-print"> CREATE TABLE </span> <span class="keyword-input">Satisfaction_Client</span> (<br>
+                         <span class="code-input">Satisfaction_ID</span>  <span class="keyword-input">INT </span><span class="keyword-print">PRIMARY KEY</span> ,<br>
+                         <span class="code-input">Client_ID</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Vente_ID</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Evaluation</span>  <span class="keyword-input">INT</span> <span class="keyword-print">CHECK</span> <span class="code-input">(Evaluation</span><span class="keyword-print"> BETWEEN</span> <span class="keyword-input">1</span><span class="keyword-print"> AND</span> <span class="keyword-input">5</span><span class="code-input">)</span>,<br>
+                         <span class="code-input">Commentaires</span>  <span class="keyword-input">TEXT </span>,<br>
+                         <span class="keyword-print">FOREIGN KEY</span> <span class="code-input">(Client_ID)</span><span class="keyword-print"> REFERENCES </span><span class="code-input">Clients(Client_ID)</span>,<br>
+                         <span class="keyword-print">FOREIGN KEY</span> <span class="code-input">(Vente_ID)</span><span class="keyword-print"> REFERENCES </span><span class="code-input">Ventes(Vente_ID)</span><br>
+
+                         );
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+
+
+
+
+
+
+            </div>
+          </section>
 
         </div>
 
