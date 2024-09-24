@@ -175,31 +175,19 @@
             <section class="padding-bottom-30">
               <div class="row">
                 <div class="col-md-12">
-                  <img src="../img/PowerBI-logo.png" alt="Excel" class="img-responsive" width="200" height="200" />
+                  <img src="../img/Sql-logo.png" alt="Excel" class="img-responsive" width="200" height="200" />
                 </div>
               </div>
             </section>
             <div class="row">
               <div class="col-xs-12 ">
-                <h2>Projet : Analyse des performances d'une entreprise de vente au détail.
+                <h2>SQL.
                 </h2>
-
-                <p class="txt-formation">Ce projet consiste à analyser les données de ventes d'une entreprise de vente
-                  au détail dans le but de comprendre ses performances globales, d'identifier les tendances de vente, de
-                  déterminer les produits les plus rentables et d'évaluer la satisfaction des clients. L'outil<strong>
-                    Power BI</strong> sera utilisé pour visualiser et interpréter ces données de manière claire et
-                  efficace.
-                </p>
                 <hr />
                 <h3>Étapes du projet:</h3>
                 <ul class="txt-formation list-style4">
-                  <li> <a href="powerBI.html#Comparaison"><strong>1- Quelle est la différence entre Power BI Desktop et
-                        le
-                        service Power BI ?</strong></a></li>
-                  <li> <a href="powerBI.html#Install-PowerBI"><strong>2- Télécharger et installer Power BI
-                        Desktop</strong></a></li>
-                  <li><a href="powerBI.html#Diagrammes "><strong>3- Diagrammes</strong> </a></li>
-             
+                  <li><a href="slq.html#CreateSQL"><strong>1- Créer une base de données</strong></a></li>
+                  <li><a href="slq.html#InsertSQL"><strong>2- Transférer les données d'un fichier Excel vers une base de données MySQL.</strong></a></li>
                 </ul>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-5">
@@ -208,131 +196,147 @@
           </section>
 
 
-          <!--Quelle est la différence entre Power BI Desktop et le service Power BI ?-->
-          <section id="Comparaison" class="port-single">
+
+          <!-- Créer une base de données -->
+          <section id="CreateSQL" class="port-single">
             <div class="row">
               <p class="col-xs-12">
-                <span class="formation-title">Quelle est la différence entre Power BI Desktop et le service Power BI
-                  ?</span>
+                <span class="formation-title">Créer une base de données</span>
               </p>
-              <h2>Power BI Desktop : Le terrain de jeu pour la création</h2>
-              <p class="txt-formation">
-                <strong>Application de bureau gratuite:</strong> C'est l'environnement où vous allez créer, modeler et
-                visualiser vos données.
-              </p>
-              <p class="txt-formation">
-                <strong>Flexibilité:</strong> Il vous permet de vous connecter à une multitude de sources de données, de
-                transformer les données, de créer des rapports interactifs et des tableaux de bord personnalisés.
-              </p>
-              <p class="txt-formation">
-                <strong>Hors ligne: </strong>Vous pouvez travailler hors ligne, ce qui est idéal pour les analyses
-                exploratoires.
-              </p>
-              <p class="txt-formation">
-                <strong>Gratuit:</strong> Power BI Desktop est disponible gratuitement, ce qui le rend accessible à
-                tous.
-              </p>
-              <p class="txt-formation">En résumé, Power BI Desktop est l'outil que nous utilisons pour concevoir nos
-                rapports et tableaux de bord.</p>
-
-              <h2>Service Power BI : Le partage et la collaboration</h2>
-              <p class="txt-formation">
-                <strong>Plateforme cloud:</strong> C'est l'endroit où vous publiez et partagez vos rapports créés dans
-                Power BI Desktop.
-              </p>
-              <p class="txt-formation">
-                <strong>Partage:</strong> Vous pouvez partager vos rapports avec des collègues, des clients ou des
-                partenaires, leur permettant d'interagir avec vos données.
-              </p>
-              <p class="txt-formation">
-                <strong>Collaboration:</strong> Le service Power BI facilite la collaboration en permettant à plusieurs
-                utilisateurs de travailler sur les mêmes rapports et de laisser des commentaires.
-              </p>
-              <p class="txt-formation"><strong>Fonctionnalités avancées:</strong> Il offre des fonctionnalités
-                supplémentaires comme la planification de rapports, la création d'applications mobiles et l'intégration
-                avec d'autres services Microsoft.</p>
-              <p class="txt-formation"><strong>Nécessite une licence:</strong> Pour profiter pleinement du service Power
-                BI, une licence est généralement requise.</p>
-              <p class="txt-formation">En résumé, Service Power BI est la plateforme qui permet de diffuser vos analyses
-                à un public plus large et de collaborer avec d'autres utilisateurs.</p>
-              <hr />
+              <h2>Script SQL</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/kU3iGFDQaFg"
+                title="Fractionner le Texte" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
 
-            </div>
-          </section>
-
-
-          <!--Install Power BI ?-->
-          <section id="Install-PowerBI" class="port-single">
-            <div class="row">
-              <p class="col-xs-12">
-                <span class="formation-title"> Install Power BI Desktop
-                </span>
-              </p>
-              <h2>Install Power BI Desktop </h2>
-
-              <p class="txt-formation">Téléchargez <strong>Power BI Desktop </strong>depuis
-                <strong>le site officiel deMicrosoft </strong>et installez-le sur votre ordinateur.
-              </p>
-              <hr />
-
-            </div>
-          </section>
-
-          <!--Diagrammes  ?-->
-          <section id="Diagrammes" class="port-single">
-            <div class="row">
-              <p class="col-xs-12">
-                <span class="formation-title"> Diagrammes
-                </span>
-              </p>
-              <h2>Les différentes étapes impliquées dans l'analyse des ventes </h2>
-              <div class="txt-formation">
-                <p>1-<strong>Collecte des données:</strong> Sources de données (ventes en magasin, en ligne.).</p>
-                <p>2-<strong>Nettoyage des données:</strong> Suppression des doublons, correction des erreurs.</p>
-                <p>3-<strong>Analyse exploratoire:</strong> Identification des tendances, des anomalies, des
-                  corrélations.</p>
-                <p>4-<strong>Modélisation:</strong> Création de modèles prédictifs (pour prévoir les ventes futures).
-                </p>
-                <p>5-<strong>Visualisation:</strong> Création de graphiques et de tableaux de bord pour présenter les
-                  résultats.</p>
-                <p>6-<strong>Prise de décision:</strong> Utilisation des insights pour optimiser les stratégies
-                  commerciales.</p>
-                </p>
-
-                <!--Start Flowchart -->
-                <pre class="mermaid">
-                flowchart TB
-                subgraph **Collecte des données**
-                    A(Ventes en magasin)
-                    B(Ventes en ligne)
-                    C(Retours)
-                end
-            
-                subgraph **Analyse exploratoire**
-                    D(Analyse par produit)
-                    E(Analyse par région)
-                    F(Analyse par saison)
-                end
-            
-                subgraph **Modélisation**
-                    G(Régression linéaire)
-                    H(Forêts aléatoires)
-                end
-            
-                A --> B --> C --> D
-                D --> E --> F
-                F --> G
-                F --> H
-                G --> I(Visualisation)
-                H --> I
-                I --> J(Prise de décision)
-              </pre>
-                <!-- end Flowchart -->
-
-                <hr />
-
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+											<span class="keyword-input">---Tables ---</span>
+                       <p class="code-input">
+                        Clients<br>
+                        Produits<br>
+                        Satisfaction_Client<br>
+                        Ventes<br>
+                        </p>
+                      </span>									          
+									</code>
+									</pre>
               </div>
+
+              <h2>1- Création de la base de données</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                      <span class="keyword-print">
+                        CREATE DATABASE <span class="keyword-input">VenteAuDetail</span> ;<br>
+                        USE  <span class="keyword-input">VenteAuDetail</span>;
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+              <h2>2- Création de la table Clients</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                   <span class="keyword-print"> CREATE TABLE </span> <span class="keyword-input">Clients</span> (<br>
+                         <span class="code-input">Client_ID</span>  <span class="keyword-input">INT </span><span class="keyword-print">PRIMARY KEY</span> ,<br>
+                         <span class="code-input">Nom</span>  <span class="keyword-input">VARCHAR(100)</span>,<br>
+                         <span class="code-input">Age</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Genre</span>  <span class="keyword-input">CHAR(1) </span>,<br>
+                         <span class="code-input">Ville</span>  <span class="keyword-input">VARCHAR(100) </span>,<br>
+                       );
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+
+
+              <h2>3- Création de la table Produits</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                   <span class="keyword-print"> CREATE TABLE </span> <span class="keyword-input">Produits</span> (<br>
+                         <span class="code-input">Produit_ID</span>  <span class="keyword-input">INT </span><span class="keyword-print">PRIMARY KEY</span>,<br>
+                         <span class="code-input">Nom_Produit</span>  <span class="keyword-input">VARCHAR(100)</span>,<br>
+                         <span class="code-input">Categorie</span>  <span class="keyword-input">VARCHAR(50)</span>,<br>
+                         <span class="code-input">Prix_Unitaire</span>  <span class="keyword-input">DECIMAL(10, 2) </span>,<br>
+                         <span class="code-input">Stock</span>  <span class="keyword-input">INT </span><br>
+                       );
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+
+
+              <h2>4- Création de la table Ventes</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                   <span class="keyword-print"> CREATE TABLE </span> <span class="keyword-input">Ventes</span> (<br>
+                         <span class="code-input">Vente_ID</span>  <span class="keyword-input">INT </span><span class="keyword-print">PRIMARY KEY</span> ,<br>
+                         <span class="code-input">Date</span>  <span class="keyword-input">DATE</span><span class="keyword-print"> NOT NULL</span>,<br>
+                         <span class="code-input">Client_ID</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Produit_ID</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">QUantite</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Prix_Unitaire</span>  <span class="keyword-input">DECIMAL(10, 2) </span>,<br>
+                         <span class="code-input">Montant_Total</span>  <span class="keyword-input">DECIMAL(10, 2) </span>,<br>
+                         <span class="keyword-print">FOREIGN KEY</span> <span class="code-input">(Client_ID)</span><span class="keyword-print"> REFERENCES </span><span class="code-input">Clients(Client_ID)</span>,<br>
+                         <span class="keyword-print">FOREIGN KEY</span> <span class="code-input">(Produit_ID)</span><span class="keyword-print"> REFERENCES </span><span class="code-input">Produits(Produit_ID)</span><br>
+
+                         );
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+              <h2>5- Création de la table Satisfaction_Client</h2>
+              <div class="block-console-input">
+                <pre class="console-line">
+										<code class="console-code">
+	                   <span class="keyword-print"> CREATE TABLE </span> <span class="keyword-input">Satisfaction_Client</span> (<br>
+                         <span class="code-input">Satisfaction_ID</span>  <span class="keyword-input">INT </span><span class="keyword-print">PRIMARY KEY</span> ,<br>
+                         <span class="code-input">Client_ID</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Vente_ID</span>  <span class="keyword-input">INT </span>,<br>
+                         <span class="code-input">Evaluation</span>  <span class="keyword-input">INT</span> <span class="keyword-print">CHECK</span> <span class="code-input">(Evaluation</span><span class="keyword-print"> BETWEEN</span> <span class="keyword-input">1</span><span class="keyword-print"> AND</span> <span class="keyword-input">5</span><span class="code-input">)</span>,<br>
+                         <span class="code-input">Commentaires</span>  <span class="keyword-input">TEXT </span>,<br>
+                         <span class="keyword-print">FOREIGN KEY</span> <span class="code-input">(Client_ID)</span><span class="keyword-print"> REFERENCES </span><span class="code-input">Clients(Client_ID)</span>,<br>
+                         <span class="keyword-print">FOREIGN KEY</span> <span class="code-input">(Vente_ID)</span><span class="keyword-print"> REFERENCES </span><span class="code-input">Ventes(Vente_ID)</span><br>
+
+                         );
+                      </span>                 
+									</code>
+									</pre>
+              </div>
+
+
+
+
+
+
+
+            </div>
+          </section>
+
+          <!-- Créer une base de données -->
+          <section id="InsertSQL" class="port-single">
+            <div class="row">
+              <p class="col-xs-12">
+                <span class="formation-title">Insertion des données </span>
+              </p>
+              <h2>Transférer les données d'un fichier Excel vers une base de données MySQL.</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/T11LZ7csPyY"
+                title="Fractionner le Texte" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+
+
+            </div>
           </section>
 
         </div>
@@ -378,7 +382,7 @@
                   <p> Mon expertise couvre l'ensemble du cycle de vie des projets IT, de l'analyse des besoins à la mise
                     en
                     œuvre et la formation des utilisateurs.</p>
-                  <p>En tant qu'analyste de données et développeur, j'powerBIle dans l'analyse et la conception de
+                  <p>En tant qu'analyste de données et développeur, j'slqle dans l'analyse et la conception de
                     solutions
                     IT, la création de sites web, d'applications mobiles et de logiciels, ainsi que dans
                     l'administration de
